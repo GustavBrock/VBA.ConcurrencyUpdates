@@ -20,7 +20,7 @@ Option Explicit
 ' To be used followed by GetUpdate to automatically handle
 ' concurrent updates.
 '
-' 2016-01-31. Gustav Brock, Cactus Data ApS, CPH.
+' 2016-02-06. Gustav Brock, Cactus Data ApS, CPH.
 '
 Public Sub SetEdit(ByRef rs As DAO.Recordset)
 
