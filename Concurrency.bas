@@ -5,9 +5,9 @@ Option Explicit
 ' Function to replace the Edit and Update methods of a DAO.Recordset
 ' to avoid errors from concurrent updates by two or more processes.
 '
-' Version 1.0.1
+' Version 1.0.2
 '
-' 2016-01-31. Gustav Brock, Cactus Data ApS, CPH.
+' 2016-02-06. Gustav Brock, Cactus Data ApS, CPH.
 
 
 ' Public variables.
@@ -40,9 +40,16 @@ Exit_SetEdit:
 
 Err_SetEdit:
     If DebugMode Then Debug.Print "    Edit", Timer, Err.Description
-    ' Continue in the loop.
-    ' Will normally happen ONCE only for each call of SetEdit.
-    Resume Next
+    If Err.Number = 3197 Then
+        ' Concurrent edit.
+        ' Continue in the loop.
+        ' Will normally happen ONCE only for each call of SetEdit.
+        Resume Next
+    Else
+        ' Other error, like deleted record.
+        ' Pass error handling to the calling procedure.
+        Resume Exit_SetEdit
+    End If
 
 End Sub
 
