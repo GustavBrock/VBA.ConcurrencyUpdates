@@ -10,7 +10,7 @@ Here is a method to avoid this situation.
 
 ![General]("images/EEconcurrency%202019.png")
 
-![General](https://raw.githubusercontent.com/GustavBrock/VBA.ConcurrencyUpdates/master/images/EEconcurrency 2019.png)
+![General](https://raw.githubusercontent.com/GustavBrock/VBA.ConcurrencyUpdates/master/images/EEconcurrency%202019.png)
 
 
 ### Running a test
