@@ -45,7 +45,7 @@ Full documentation is found here:
 
 ![EE Logo](https://raw.githubusercontent.com/GustavBrock/VBA.ConcurrencyUpdates/master/images/EE%20Logo.png)
 
-[Handle concurrent update conflicts in Access silently](https://www.experts-exchange.com/articles/25780/Handle-concurrent-update-conflicts-in-Access-silently.html)
+[Handle concurrent update conflicts in Access silently](https://www.experts-exchange.com/articles/25780/Handle-concurrent-update-conflicts-in-Access-silently.html?preview=qOPFiP58H78%3D)
 
 <hr>
 
